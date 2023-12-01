@@ -42,7 +42,7 @@ def pay():
             'email': email,
             'amount': int(amount * 100),  # Paystack expects amount in kobo
             'currency': 'NGN',
-            'callback_url': 'http://localhost:5000/verify_payment',
+            'callback_url': 'https://flask-paystack-checkout.onrender.com/verify_payment',
         }
 
         # Make the API request to initialize the transaction
